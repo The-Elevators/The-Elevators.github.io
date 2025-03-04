@@ -1,0 +1,102 @@
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	font-family: "Poppins"; 
+	height: 100%; 
+	width: 100%;
+	overflow: auto;
+	margin: 0px;
+	padding: 0px;   
+	min-height: 100vh;
+	overflow-y: scroll;
+}
+
+/* href link style */
+a {
+	text-decoration: none; 	
+	display: inline-block;
+    margin-bottom: 6px;
+    color: darkblue;
+}
+a:hover, a:active {
+	color: rgba(137, 144, 153, 0.9); 
+}
+
+ul {
+    margin-top: 2px !important;
+}
+
+header {
+	background: lightgrey;
+    display: table; 
+    width: 100%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+nav{
+    float: left; 
+    width: 20%; 
+    height: 100%;
+    padding: 2.5%;
+    /*background: rgb(0, 128, 128, 0.1);*/
+    padding-top: 3.5%;
+}
+
+article {
+    float: left; 
+    width: 70%; 
+    padding: 2.5%; 
+    padding-top: 3.5%;
+}
+
+footer {
+	bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	width: 100%;
+	font-size: 12px; 
+	text-align: center; 
+	background: lightgrey;
+	color: #000000;
+	position: absolute;
+}
+
+.accordion {
+    background-color: #FFFFFF;
+    color: #000000;
+    cursor: pointer;
+    padding: 12px;
+    padding-right: 24px;
+    font-size: medium;
+    width: auto;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+.accordion:after {
+    content: "\2BC8"; /* Unicode character for "plus" sign (+) */
+    font-size: medium;
+    color: #000000;
+    float: left;
+    margin-right: 5px;
+}
+.active:after {
+    content: "\2BC6"; /* Unicode character for "minus" sign (-) */
+}
+.active, .accordion:hover {
+    background-color: rgb(211, 211, 211, 0.5);
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}

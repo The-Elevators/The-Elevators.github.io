@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	
+	<link rel = "stylesheet" type = "text/css" href = "../stylesheet.css" media = "screen"/>
+	<!-- <link href = "https://fonts.googleapis.com/css?family=Baskervville|Cinzel|Great+Vibes|Marck+Script|Parisienne|Sacramento&display=swap" rel = "stylesheet"> --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- <link href = "resources/doge.png" rel = "icon" type = "image/x-icon" /> -->
+	<title>Bringing music to the people</title>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+	
+</head>
+
+<body>
+    <header>
+        <div id = "headerContainer" style = "float: left; width: 25%;"><a></a></div>
+        <div id = "title" style = "float: left; width: 50%; text-align: center; font-size: x-large;">
+            The Elevators — Bringing Music to the People
+        </div>
+        <div id = "headerContainer" style = "float: left; width: 25%;"><a></a></div>
+    </header>
+
+    <nav>
+        <a href = "https://www.theelevators.de">Home</a></br>
+        <a href = "https://www.theelevators.de/dates">Termine</a></br>
+        <a href = "https://www.theelevators.de/setlist">Setlist</a></br>
+        <a style = "text-decoration: underline !important; text-underline-offset: 4px;" href = "https://www.theelevators.de/resources">Docs</a></br>
+        <a href = "https://www.theelevators.de/about">About</a></br>
+    </nav>
+    <article>
+        <button class="accordion">Bläser</button>
+        <div class="panel">
+        <ul>
+            <li><a href = "winds/Watermelon_Man.pdf" title = "Sheet music" target = "_blank" rel = "noopener noreferrer">Watermelon Man</a></li>
+            <li>...</li>
+        </ul> 
+        </div>
+
+        <button class="accordion">Schlagzeug</button>
+        <div class="panel">
+            <ul>
+                <li><a href = "drums/Watermelon_Man.pdf" title = "Sheet music" target = "_blank" rel = "noopener noreferrer">Watermelon Man</a></li>
+                <li>...</li>
+            </ul> 
+        </div>
+
+        <button class="accordion">Kontrabass</button>
+        <div class="panel">
+            <ul>
+                <li><a href = "bass/Watermelon_Man.pdf" title = "Sheet music" target = "_blank" rel = "noopener noreferrer">Watermelon Man</a></li>
+                <li>...</li>
+            </ul> 
+        </div>
+
+        <button class="accordion">Klavier</button>
+        <div class="panel">
+            <ul>
+                <li><a href = "piano/Watermelon_Man.pdf" title = "Sheet music" target = "_blank" rel = "noopener noreferrer">Watermelon Man</a></li>
+                <li>...</li>
+            </ul> 
+        </div>
+    </article>
+</body>
+
+<footer>
+    © 2025 www.akajazz.de
+</footer>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
+</html>
